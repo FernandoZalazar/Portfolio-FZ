@@ -17,11 +17,13 @@
     z-index: 2;
     text-align: center;
     align-items: center;
+    box-shadow: 0px 0px 10px rgb(87, 86, 86);
 }
 .text{
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
+    font-family: 'Redressed', cursive;
 }
 .toggleroff{
     grid-area: toggleroff;
@@ -66,6 +68,7 @@
     margin-left: 9rem;
     padding-top: 6rem;
     margin-bottom: 4.5rem;
+    font-family: 'Redressed', cursive;
 }
 .abanner{
     text-decoration: none;
@@ -88,6 +91,7 @@
     margin-top: 3rem;
     padding-top: 1.5rem;
     margin-left: 38rem;
+    font-family: 'Redressed', cursive;
 }
 .sobremidiv{
     display: grid;
@@ -104,9 +108,13 @@
     background-position: center;
     background-size: cover;
     border-radius: 50%;
-    height: 15rem;
-    width: 15rem;
-
+    height: 17rem;
+    width: 17rem;
+    transition: all 300ms;
+    box-shadow: 0px 0px 10px rgb(87, 86, 86);
+}
+.sobremiimg:hover{
+    transform: scale(1.4) !important; 
 }
 .sobremip{
     grid-area: sobremip;
@@ -114,6 +122,8 @@
     font-size: 1.1rem;
     margin: 3rem;
     text-align: justify;
+    font-family: 'Redressed', cursive;
+    font-size: 1.4rem;
 }
 /*PORTFOLIO*/
 .sectionportfolio{
@@ -124,6 +134,7 @@
     padding-top: 1.5rem;
     margin-left: 38rem;
     margin-bottom: 2rem;
+    font-family: 'Redressed', cursive;
 }
 .divportfolio{
     display: grid;
@@ -142,6 +153,11 @@
     height: 15rem;
     width: 30rem;
     box-shadow: 0px 0px 10px rgb(87, 86, 86);
+    transition: all 2000ms;
+}
+.portimg:hover{
+    transform: scale(1.11) !important; 
+    box-shadow: 0px 0px 40px rgb(21, 103, 255);
 }
 .cartportfolio{
     background-color: rgb(248, 248, 248);
@@ -150,6 +166,10 @@
     margin: 1rem;
     padding: 1rem;
     text-align: center;
+    transition: all 300ms;
+}
+.cartportfolio:hover{
+    transform: scale(1.15) !important; 
 }
 /*--------IMG--------*/
 .html{
@@ -162,7 +182,7 @@
 }
 .gitportfolio{
     grid-area: portfolio;
-    background-image: url(./multimedia/gitporfolio1.png);
+    background-image: url(./multimedia/gitportfolio2.png);
 }
 .reactjs{
     grid-area: reactjs;
@@ -171,6 +191,11 @@
 .pport{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-family: 'Redressed', cursive;
+    font-size: 1.2rem;
+}
+.arepositorio{
+    text-decoration: none;
 }
 .htmlp{
     grid-area: html;
@@ -201,6 +226,7 @@
     margin-top: 2rem;
     padding-top: 1.5rem;
     margin-left: 38rem;
+    font-family: 'Redressed', cursive;
 }
 .divfooter{
     display: grid;
@@ -215,6 +241,8 @@
 .estilosf{
     text-decoration: none;
     color: rgb(87, 86, 86);
+    font-family: 'Redressed', cursive;
+    font-size: 1.6rem;
 }
 .footerlink{
     grid-area: link;
