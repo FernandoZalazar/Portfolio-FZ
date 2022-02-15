@@ -13,6 +13,9 @@
     <!--FONT GOOGLE-->
     <style>@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');</style>
 
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Redressed&display=swap');</style>
+
+
     <link rel="stylesheet" href="styles.css">
     
     <title>PortFolio</title>
@@ -24,11 +27,13 @@
         <a href="#sobremi" class="sobremi text">Sobre Mí</a>
         <a href="#portfolio" class="portfolio text">Portfolio</a>
         <a href="#contacto" class="contacto text">Contacto</a>
-        <a href="./indexdark.html" class="toggleroff">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-        class="bi bi-toggle-off" viewBox="0 0 16 16">
-        <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/>
-        </svg></a>
+        <div class="toggleroff"><h3 class="dark">DARK</h3>
+            <a href="./indexdark.html" class="botton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+            class="bi bi-toggle-off" viewBox="0 0 16 16">
+            <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/>
+            </svg></a>
+        </div>
     </nav>
     <!--BANNER-->
     <div class="divgrid imgbanner">
@@ -62,8 +67,7 @@
         <div class="sobremidiv">
             <img class="sobremiimg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
             <p class="sobremip" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="300">   Soy estudiante de  Desarrollo Web en la Escuela Digital CoderHouse. 
-                Vivo en Argentina Buenos Aires (CABA), tengo 25 años, toda mi vida me 
-                gustó el desarrollo y la tecnología. Hice varios cursos para adentrarse 
+                Vivo en Buenos Aires Argentina (CABA), tengo 25 años, hace un largo tiempo que desperte un fuerte interes el desarrollo web y las tecnologías. Hice varios cursos para adentrarse 
                 cada vez más en el mundo de la programación, hasta que finalmente 
                 decidí dar un paso más e inscribirme en una carrera, con eso 
                 perfeccionar todo lo aprendido y sumar habilidades.<br>
@@ -75,34 +79,34 @@
 
         <h2 id="portfolio" class="sectionportfolio" data-aos="zoom-in" data-aos-duration="2000">Portfolio</h2>
         <div class="divportfolio">
-            <div class="cartportfolio" data-aos="zoom-in">
+            <div class="cartportfolio cartleft" data-aos="zoom-in">
                 <a href="https://fernandozalazar.github.io/Zalazar/">
                 <img class="html portimg"></a>
-                <p class="htmlp pport"><strong>PROYECTO: HTML & CSS (CoderHouse)</strong><br>
+                <p class="htmlp pport"><strong class="titlecart">PROYECTO: HTML & CSS (CoderHouse)</strong><br>
                 Este proyecto es un modelo de una pyme de pinceles.<br>
                 Repositorio GitHub: <a href="https://github.com/FernandoZalazar/Zalazar" class="arepositorio">link</a></p>
             </div>
             
-            <div class="cartportfolio" data-aos="zoom-in">
+            <div class="cartportfolio cartright" data-aos="zoom-in">
                 <a href="https://fernandozalazar.github.io/tunningcars/">
                 <img class="javascript portimg"></a>
-                <p class="javascriptp pport"><strong>PROYECTO: JavaScript (CoderHouse)</strong><br>
+                <p class="javascriptp pport"><strong class="titlecart">PROYECTO: JavaScript (CoderHouse)</strong><br>
                 Simula una tienda de Tunning para autos deportivos.<br>
                 Repositorio GitHub: <a href="https://github.com/FernandoZalazar/tunningcars" class="arepositorio">link</a></p>
             </div>
             
-            <div class="cartportfolio" data-aos="zoom-in">
+            <div class="cartportfolio cartleft" data-aos="zoom-in">
                 <a href="https://fernandozalazar.github.io/Portfolio-FZ/">
                 <img class="gitportfolio portimg"></a>
-                <p class="gitportfoliop pport"><strong>PROYECTO: Portfolio (Personal)</strong><br>
+                <p class="gitportfoliop pport"><strong class="titlecart">PROYECTO: Portfolio (Personal)</strong><br>
                 Proyecto personal aplicando estilos propios y ideas originales.<br>
                 Repositorio GitHub: <a href="https://github.com/FernandoZalazar/Portfolio-FZ" class="arepositorio">link</a></p>
             </div>
             
-            <div class="cartportfolio" data-aos="zoom-in">
+            <div class="cartportfolio cartright" data-aos="zoom-in">
                 <a href="https://github.com/FernandoZalazar/moto-zalazar.git">
                 <img class="reactjs portimg"></a>
-                <p class="reactjsp pport"><strong>PROYECTO: ReactJS (CoderHouse)</strong><br>
+                <p class="reactjsp pport"><strong class="titlecart">PROYECTO: ReactJS (CoderHouse)</strong><br>
                 Esta en curso todavia...<br>
                 Repositorio GitHub: <a href="https://github.com/FernandoZalazar/moto-zalazar" class="arepositorio">link</a></p>
             </div>
