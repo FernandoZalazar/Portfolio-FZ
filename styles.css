@@ -153,12 +153,40 @@
 .divportfolio{
     display: grid;
     grid-template-areas:
-    "html javascript"
-    "portfolio reactjs";
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    "html borderht javascript"
+    "borderwl borderp borderwr"
+    "portfolio borderhb reactjs";
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: 49% 2% 49%;
     align-items: center;
     justify-items: center;
+}
+.borderp{
+    grid-area: borderp;
+}
+.borderht{
+    grid-area: borderht;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+    height: 14rem;
+}
+.borderhb{
+    grid-area: borderhb;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+    height: 14rem;
+}
+.borderwr{
+    grid-area: borderwr;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+    width: 14rem;
+}
+.borderwl{
+    grid-area: borderwl;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+    width: 14rem;
 }
 .portimg{
     background-repeat: no-repeat;
@@ -175,9 +203,6 @@
     box-shadow: 0px 0px 40px rgb(21, 103, 255);
 }
 .cartportfolio{
-    background-color: rgb(248, 248, 248);
-    box-shadow: 0px 0px 10px rgb(87, 86, 86);
-    border-radius: 2%;
     padding: 2rem;
     margin-top: 4rem;
     text-align: center;
