@@ -73,12 +73,12 @@
         font-size: 0.5rem;
         margin-top: 0.5rem;
         margin-bottom: 0rem;
-        margin-left: 0.5rem;
+        margin-left: 0.7rem;
     }
     .botton{
         grid-area: b;
         color: black;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.1rem;
         margin-right: 1rem;
     }
     .ing{
@@ -86,7 +86,7 @@
         font-size: 0.5rem;
         margin-top: 0.5rem;
         margin-bottom: 0rem;
-        margin-left: 0.5rem;
+        margin-left: 0.2rem;
     }
     .trad{
         grid-area: trad;
@@ -181,9 +181,11 @@
     }
     .sobremidiv{
         display: grid;
-        grid-template-areas: "sobremiimg sobremip";
+        grid-template-areas: 
+        "sobremiimg sobremip"
+        "sobremiimg sobremip2";
         grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
+        grid-template-rows: 50% 50%;
         align-items: center;
         justify-items: center;
     }
@@ -206,10 +208,19 @@
         grid-area: sobremip;
         text-indent: 2rem;
         font-size: 1.1rem;
-        margin: 3rem;
+        margin-top: 5rem;
+        margin-right: 3rem;
+        margin-bottom: 0rem;
         text-align: justify;
         font-family: 'Gideon Roman', cursive;
-        font-size: 1.2rem;
+    }
+    .sobremip2{
+        grid-area: sobremip2;
+        text-indent: 2rem;
+        font-size: 1.1rem;
+        margin-right: 3rem;
+        text-align: justify;
+        font-family: 'Gideon Roman', cursive;
     }
     /*PORTFOLIO*/
     .sectionportfolio{
@@ -265,7 +276,7 @@
         background-position: center;
         background-size: cover;
         height: 13rem;
-        width: 100%;
+        width: 23rem;
         box-shadow: 0px 0px 10px rgb(87, 86, 86);
         transition: all 2000ms;
         border-radius: 3%;
@@ -473,8 +484,12 @@
         font-family: 'Gideon Roman', cursive;
         display: grid;
         grid-template-areas: "ing trad";
-        grid-template-columns: 28% 72%;
+        grid-template-columns: 36% 64%;
         grid-template-rows: 100%;
+    }
+    .nav-icono{
+        width: 1.4rem!important; 
+        height: 1.4rem!important; 
     }
     .ing{
         grid-area: ing;
@@ -568,7 +583,7 @@
         text-align: center;
         border-top: 1px solid black;
         width: 7rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         padding-top: 1.5rem;
         margin-left: 36%;
         font-family: 'Redressed', cursive;
@@ -578,9 +593,21 @@
         justify-items: center;
     }
     .sobremip{
+        grid-area: sobremip;
         text-indent: 2rem;
-        font-size: 1rem;
-        margin: 1rem;
+        font-size: 1.1rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        margin-bottom: 0rem;
+        text-align: justify;
+        font-family: 'Gideon Roman', cursive;
+    }
+    .sobremip2{
+        grid-area: sobremip2;
+        text-indent: 2rem;
+        font-size: 1.1rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
         text-align: justify;
         font-family: 'Gideon Roman', cursive;
     }
