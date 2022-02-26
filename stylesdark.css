@@ -7,10 +7,14 @@
         width: 33rem;
     }
 }
-    
+
 @media screen and (min-width: 881px){
     #body{
         background-color: rgb(17, 17, 17);
+    }
+    #icono-menu{
+        position: fixed;
+        top: 150%;
     }
     .nav{
         display: grid;
@@ -44,16 +48,52 @@
         grid-template-columns: repeat(2,auto);
         grid-template-rows: 100%;
     }
+    .icons{
+        display: grid;
+        grid-template-areas:
+        "."
+        "toggleroff"
+        "traductor"
+        ".";
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 30% 30% 20%;
+        text-align: center;
+        align-items: center;
+    }
+    .traductor{
+        grid-area: traductor;
+        color: white;
+        font-family: 'Gideon Roman', cursive;
+        display: grid;
+        grid-template-areas:"ing trad";
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: 100%;
+    }
     .dark{
+        color: white;
         grid-area: p;
-        font-size: 0.8rem;
-        margin-top: 0.7rem;
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0rem;
+        margin-left: 0.5rem;
     }
     .botton{
         grid-area: b;
         color: white;
-        margin-top: 0.3rem;
-        margin-right: 2.2rem;
+        margin-bottom: 0.2rem;
+        margin-right: 1rem;
+    }
+    .ing{
+        grid-area: ing;
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0rem;
+        margin-left: 0.5rem;
+    }
+    .trad{
+        grid-area: trad;
+        color: white;
+        margin-right: 1rem;
     }
     .fernando{
         grid-area: fernando;
@@ -99,7 +139,7 @@
         color: rgb(219, 219, 219);
     }
     .gitbanner{
-        margin-left: 16rem;
+        margin-left: 12rem;
     }
     .linkbanner{
         margin-left: 2rem;
@@ -133,13 +173,12 @@
     .sectionsobremi{
         text-align: center;
         border-top: 1px solid white;
-        width: 15rem;
+        width: 10rem;
         margin-top: 3rem;
         padding-top: 1.5rem;
-        margin-left: 35rem;
+        margin-left: 42%;
         font-family: 'Redressed', cursive;
         color: white;
-        font-size: 2.3rem;
     }
     .sobremidiv{
         display: grid;
@@ -178,14 +217,12 @@
     .sectionportfolio{
         text-align: center;
         border-top: 1px solid white;
-        width: 15rem;
+        width: 10rem;
         margin-top: 3rem;
         padding-top: 1.5rem;
-        margin-left: 35rem;
-        margin-bottom: 2rem;
+        margin-left: 42%;
         font-family: 'Redressed', cursive;
         color: white;
-        font-size: 2.3rem;
     }
     .divportfolio{
         display: grid;
@@ -229,8 +266,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 15rem;
-        width: 30rem;
+        height: 13rem;
+        width: 100%;
         box-shadow: 0px 0px 10px rgb(219, 219, 219);
         transition: all 2000ms;
         border-radius: 3%;
@@ -241,7 +278,7 @@
     }
     .cartportfolio{
         padding: 2rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
         text-align: center;
         transition: all 300ms;
     }
@@ -266,6 +303,7 @@
     .gitportfolio{
         grid-area: portfolio;
         background-image: url(./multimedia/gitportfolio2.png);
+        width: 92%;
     }
     .reactjs{
         grid-area: reactjs;
@@ -310,13 +348,12 @@
     .footercontacto{
         text-align: center;
         border-top: 1px solid white;
-        width: 15rem;
-        margin-top: 2rem;
+        width: 10rem;
+        margin-top: 3rem;
         padding-top: 1.5rem;
-        margin-left: 35rem;
+        margin-left: 42%;
         font-family: 'Redressed', cursive;
         color: white;
-        font-size: 2.3rem;
     }
     .divfooter{
         display: grid;
@@ -409,12 +446,14 @@
         "sobremi"
         "portfolio"
         "contacto"
-        "toggleroff"
-        "tra"
+        "icons"
         ".";
         grid-template-columns: 100%;
-        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 30%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 30%;
         font-family: 'Redressed', cursive;
+    }
+    .icons{
+        grid-area: icons;
     }
     .toggleroff{
         grid-area: toggleroff;
@@ -422,32 +461,32 @@
         font-family: 'Gideon Roman', cursive;
         display: grid;
         grid-template-areas: "p b";
-        grid-template-columns: 35% 65%;
+        grid-template-columns: 28% 72%;
         grid-template-rows: 100%;
     }
     .dark{
         grid-area: p;
         color: black;
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-left: 1rem;
-        margin-top: 0.5rem;
+        margin-top: 0.6rem;
     }
     .botton{
         grid-area: b;
     }
-    .tra{
-        grid-area: tra;
+    .traductor{
+        grid-area: traductor;
         color: black;
         font-family: 'Gideon Roman', cursive;
         display: grid;
         grid-template-areas: "ing trad";
-        grid-template-columns: 39% 61%;
+        grid-template-columns: 28% 72%;
         grid-template-rows: 100%;
     }
     .ing{
         grid-area: ing;
         color: black;
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-left: 1rem;
         margin-top: 0.5rem;
     }
@@ -478,12 +517,14 @@
         height: 20rem;
         width: 100%;
         top: 0%;
+        border-radius: 0px 0px 200px 30px;
     }
     .divbanner{
         background: rgb(0,0,0);
         background: linear-gradient(45deg, rgba(0,0,0,1) 5%, rgba(254,254,254,0) 54%);
         height: 100%;
         box-shadow: 0px 0px 20px rgb(236, 236, 236);
+        border-radius: 0px 0px 200px 30px;
     }
     .h1banner{
         color: white;
@@ -496,21 +537,15 @@
     .abanner{
         text-decoration: none;
         color: white;
-        width: 1.2rem; 
-        height: 1.2rem; 
     }
     .gitbanner{
-        margin-left: 1rem;
-        width: 1.2rem; 
-        height: 1.2rem; 
+        margin-left: 1.5rem;
     }
     .linkbanner{
-        margin-left: 0.5rem;
-        width: 1.2rem; 
-        height: 1.2rem; 
+        margin-left: 0.6rem;
     }
     .mailbanner{
-        margin-left: 0.5rem;
+        margin-left: 0.6rem;
     }
     /*---------------CV-------------------------*/
     .divcv{
@@ -529,7 +564,7 @@
         font-size: 1.1rem;
         color: black;  
         font-family: 'Gideon Roman', cursive;
-        background-color: rgba(245, 245, 245, 0.637);
+        background-color: rgba(255, 255, 255, 0.76);
     }
     .acv:hover{
         color:white;
@@ -542,7 +577,7 @@
         width: 7rem;
         margin-top: 2rem;
         padding-top: 1.5rem;
-        margin-left: 33%;
+        margin-left: 36%;
         font-family: 'Redressed', cursive;
         color: white;
     }
@@ -565,7 +600,7 @@
         width: 7rem;
         margin-top: 2rem;
         padding-top: 1.5rem;
-        margin-left: 33%;
+        margin-left: 36%;
         font-family: 'Redressed', cursive;
         color: white;
     }
@@ -650,7 +685,7 @@
         background-image: url(./multimedia/javascript1.png);
     }
     .gitportfolio{
-
+        width: 87%;
         background-image: url(./multimedia/gitportfolio2.png);
     }
 
@@ -698,7 +733,7 @@
         width: 7rem;
         margin-top: 2rem;
         padding-top: 1.5rem;
-        margin-left: 33%;
+        margin-left: 36%;
         font-family: 'Redressed', cursive;
         color: white;
     }
@@ -723,6 +758,11 @@
         width: 1.5rem!important; 
         height: 1.5rem!important; 
     }
+    .banner-icono{
+        width: 1.2rem!important; 
+        height: 1.2rem!important; 
+    }
+
     .footerlink{
         grid-area: link;
         margin-left: 2rem;
